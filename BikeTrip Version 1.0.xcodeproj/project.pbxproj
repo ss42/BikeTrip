@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		924519881C715B8200A4887B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924519871C715B8200A4887B /* AppDelegate.swift */; };
+		9245198A1C715B8200A4887B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924519891C715B8200A4887B /* ViewController.swift */; };
+		9245198D1C715B8200A4887B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9245198B1C715B8200A4887B /* Main.storyboard */; };
+		924519901C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9245198E1C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodeld */; };
+		924519921C715B8200A4887B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 924519911C715B8200A4887B /* Assets.xcassets */; };
+		924519951C715B8200A4887B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924519931C715B8200A4887B /* LaunchScreen.storyboard */; };
+		924519A01C715B8300A4887B /* BikeTrip_Version_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245199F1C715B8300A4887B /* BikeTrip_Version_1_0Tests.swift */; };
+		924519AB1C715B8300A4887B /* BikeTrip_Version_1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924519AA1C715B8300A4887B /* BikeTrip_Version_1_0UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9245199C1C715B8300A4887B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9245197C1C715B8200A4887B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 924519831C715B8200A4887B;
+			remoteInfo = "BikeTrip Version 1.0";
+		};
+		924519A71C715B8300A4887B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9245197C1C715B8200A4887B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 924519831C715B8200A4887B;
+			remoteInfo = "BikeTrip Version 1.0";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		924519841C715B8200A4887B /* BikeTrip Version 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BikeTrip Version 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		924519871C715B8200A4887B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		924519891C715B8200A4887B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9245198C1C715B8200A4887B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9245198F1C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BikeTrip_Version_1_0.xcdatamodel; sourceTree = "<group>"; };
+		924519911C715B8200A4887B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		924519941C715B8200A4887B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		924519961C715B8200A4887B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9245199B1C715B8300A4887B /* BikeTrip Version 1.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BikeTrip Version 1.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9245199F1C715B8300A4887B /* BikeTrip_Version_1_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeTrip_Version_1_0Tests.swift; sourceTree = "<group>"; };
+		924519A11C715B8300A4887B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		924519A61C715B8300A4887B /* BikeTrip Version 1.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BikeTrip Version 1.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		924519AA1C715B8300A4887B /* BikeTrip_Version_1_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeTrip_Version_1_0UITests.swift; sourceTree = "<group>"; };
+		924519AC1C715B8300A4887B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		924519811C715B8200A4887B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924519981C715B8300A4887B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924519A31C715B8300A4887B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9245197B1C715B8200A4887B = {
+			isa = PBXGroup;
+			children = (
+				924519861C715B8200A4887B /* BikeTrip Version 1.0 */,
+				9245199E1C715B8300A4887B /* BikeTrip Version 1.0Tests */,
+				924519A91C715B8300A4887B /* BikeTrip Version 1.0UITests */,
+				924519851C715B8200A4887B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		924519851C715B8200A4887B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				924519841C715B8200A4887B /* BikeTrip Version 1.0.app */,
+				9245199B1C715B8300A4887B /* BikeTrip Version 1.0Tests.xctest */,
+				924519A61C715B8300A4887B /* BikeTrip Version 1.0UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		924519861C715B8200A4887B /* BikeTrip Version 1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				924519871C715B8200A4887B /* AppDelegate.swift */,
+				924519891C715B8200A4887B /* ViewController.swift */,
+				9245198B1C715B8200A4887B /* Main.storyboard */,
+				924519911C715B8200A4887B /* Assets.xcassets */,
+				924519931C715B8200A4887B /* LaunchScreen.storyboard */,
+				924519961C715B8200A4887B /* Info.plist */,
+				9245198E1C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodeld */,
+			);
+			path = "BikeTrip Version 1.0";
+			sourceTree = "<group>";
+		};
+		9245199E1C715B8300A4887B /* BikeTrip Version 1.0Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9245199F1C715B8300A4887B /* BikeTrip_Version_1_0Tests.swift */,
+				924519A11C715B8300A4887B /* Info.plist */,
+			);
+			path = "BikeTrip Version 1.0Tests";
+			sourceTree = "<group>";
+		};
+		924519A91C715B8300A4887B /* BikeTrip Version 1.0UITests */ = {
+			isa = PBXGroup;
+			children = (
+				924519AA1C715B8300A4887B /* BikeTrip_Version_1_0UITests.swift */,
+				924519AC1C715B8300A4887B /* Info.plist */,
+			);
+			path = "BikeTrip Version 1.0UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		924519831C715B8200A4887B /* BikeTrip Version 1.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 924519AF1C715B8300A4887B /* Build configuration list for PBXNativeTarget "BikeTrip Version 1.0" */;
+			buildPhases = (
+				924519801C715B8200A4887B /* Sources */,
+				924519811C715B8200A4887B /* Frameworks */,
+				924519821C715B8200A4887B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BikeTrip Version 1.0";
+			productName = "BikeTrip Version 1.0";
+			productReference = 924519841C715B8200A4887B /* BikeTrip Version 1.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9245199A1C715B8300A4887B /* BikeTrip Version 1.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 924519B21C715B8300A4887B /* Build configuration list for PBXNativeTarget "BikeTrip Version 1.0Tests" */;
+			buildPhases = (
+				924519971C715B8300A4887B /* Sources */,
+				924519981C715B8300A4887B /* Frameworks */,
+				924519991C715B8300A4887B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9245199D1C715B8300A4887B /* PBXTargetDependency */,
+			);
+			name = "BikeTrip Version 1.0Tests";
+			productName = "BikeTrip Version 1.0Tests";
+			productReference = 9245199B1C715B8300A4887B /* BikeTrip Version 1.0Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		924519A51C715B8300A4887B /* BikeTrip Version 1.0UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 924519B51C715B8300A4887B /* Build configuration list for PBXNativeTarget "BikeTrip Version 1.0UITests" */;
+			buildPhases = (
+				924519A21C715B8300A4887B /* Sources */,
+				924519A31C715B8300A4887B /* Frameworks */,
+				924519A41C715B8300A4887B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				924519A81C715B8300A4887B /* PBXTargetDependency */,
+			);
+			name = "BikeTrip Version 1.0UITests";
+			productName = "BikeTrip Version 1.0UITests";
+			productReference = 924519A61C715B8300A4887B /* BikeTrip Version 1.0UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9245197C1C715B8200A4887B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Sanjay Shrestha/ Rahul Murthy";
+				TargetAttributes = {
+					924519831C715B8200A4887B = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					9245199A1C715B8300A4887B = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 924519831C715B8200A4887B;
+					};
+					924519A51C715B8300A4887B = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 924519831C715B8200A4887B;
+					};
+				};
+			};
+			buildConfigurationList = 9245197F1C715B8200A4887B /* Build configuration list for PBXProject "BikeTrip Version 1.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9245197B1C715B8200A4887B;
+			productRefGroup = 924519851C715B8200A4887B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				924519831C715B8200A4887B /* BikeTrip Version 1.0 */,
+				9245199A1C715B8300A4887B /* BikeTrip Version 1.0Tests */,
+				924519A51C715B8300A4887B /* BikeTrip Version 1.0UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		924519821C715B8200A4887B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924519951C715B8200A4887B /* LaunchScreen.storyboard in Resources */,
+				924519921C715B8200A4887B /* Assets.xcassets in Resources */,
+				9245198D1C715B8200A4887B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924519991C715B8300A4887B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924519A41C715B8300A4887B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		924519801C715B8200A4887B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924519901C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodeld in Sources */,
+				9245198A1C715B8200A4887B /* ViewController.swift in Sources */,
+				924519881C715B8200A4887B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924519971C715B8300A4887B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924519A01C715B8300A4887B /* BikeTrip_Version_1_0Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924519A21C715B8300A4887B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924519AB1C715B8300A4887B /* BikeTrip_Version_1_0UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9245199D1C715B8300A4887B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 924519831C715B8200A4887B /* BikeTrip Version 1.0 */;
+			targetProxy = 9245199C1C715B8300A4887B /* PBXContainerItemProxy */;
+		};
+		924519A81C715B8300A4887B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 924519831C715B8200A4887B /* BikeTrip Version 1.0 */;
+			targetProxy = 924519A71C715B8300A4887B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9245198B1C715B8200A4887B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9245198C1C715B8200A4887B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		924519931C715B8200A4887B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				924519941C715B8200A4887B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		924519AD1C715B8300A4887B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		924519AE1C715B8300A4887B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		924519B01C715B8300A4887B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BikeTrip Version 1.0/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "St-Marys.BikeTrip-Version-1-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		924519B11C715B8300A4887B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BikeTrip Version 1.0/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "St-Marys.BikeTrip-Version-1-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		924519B31C715B8300A4887B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "BikeTrip Version 1.0Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "St-Marys.BikeTrip-Version-1-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BikeTrip Version 1.0.app/BikeTrip Version 1.0";
+			};
+			name = Debug;
+		};
+		924519B41C715B8300A4887B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "BikeTrip Version 1.0Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "St-Marys.BikeTrip-Version-1-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BikeTrip Version 1.0.app/BikeTrip Version 1.0";
+			};
+			name = Release;
+		};
+		924519B61C715B8300A4887B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "BikeTrip Version 1.0UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "St-Marys.BikeTrip-Version-1-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "BikeTrip Version 1.0";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		924519B71C715B8300A4887B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "BikeTrip Version 1.0UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "St-Marys.BikeTrip-Version-1-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "BikeTrip Version 1.0";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9245197F1C715B8200A4887B /* Build configuration list for PBXProject "BikeTrip Version 1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924519AD1C715B8300A4887B /* Debug */,
+				924519AE1C715B8300A4887B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		924519AF1C715B8300A4887B /* Build configuration list for PBXNativeTarget "BikeTrip Version 1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924519B01C715B8300A4887B /* Debug */,
+				924519B11C715B8300A4887B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		924519B21C715B8300A4887B /* Build configuration list for PBXNativeTarget "BikeTrip Version 1.0Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924519B31C715B8300A4887B /* Debug */,
+				924519B41C715B8300A4887B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		924519B51C715B8300A4887B /* Build configuration list for PBXNativeTarget "BikeTrip Version 1.0UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924519B61C715B8300A4887B /* Debug */,
+				924519B71C715B8300A4887B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9245198E1C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9245198F1C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodel */,
+			);
+			currentVersion = 9245198F1C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodel */;
+			path = BikeTrip_Version_1_0.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9245197C1C715B8200A4887B /* Project object */;
+}
