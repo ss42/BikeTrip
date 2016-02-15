@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1094876C1C71880800FAD7B4 /* DestinationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */; };
+		1094876E1C71917B00FAD7B4 /* RiderSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094876D1C71917B00FAD7B4 /* RiderSignInViewController.swift */; };
+		109487701C71918B00FAD7B4 /* DriverSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094876F1C71918B00FAD7B4 /* DriverSignInViewController.swift */; };
 		924519881C715B8200A4887B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924519871C715B8200A4887B /* AppDelegate.swift */; };
 		9245198A1C715B8200A4887B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924519891C715B8200A4887B /* ViewController.swift */; };
 		9245198D1C715B8200A4887B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9245198B1C715B8200A4887B /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationInfoViewController.swift; sourceTree = "<group>"; };
+		1094876D1C71917B00FAD7B4 /* RiderSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderSignInViewController.swift; sourceTree = "<group>"; };
+		1094876F1C71918B00FAD7B4 /* DriverSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverSignInViewController.swift; sourceTree = "<group>"; };
 		924519841C715B8200A4887B /* BikeTrip Version 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BikeTrip Version 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		924519871C715B8200A4887B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		924519891C715B8200A4887B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				924519871C715B8200A4887B /* AppDelegate.swift */,
 				924519891C715B8200A4887B /* ViewController.swift */,
 				1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */,
+				1094876D1C71917B00FAD7B4 /* RiderSignInViewController.swift */,
+				1094876F1C71918B00FAD7B4 /* DriverSignInViewController.swift */,
 				9245198B1C715B8200A4887B /* Main.storyboard */,
 				924519931C715B8200A4887B /* LaunchScreen.storyboard */,
 				924519961C715B8200A4887B /* Info.plist */,
@@ -258,7 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1094876E1C71917B00FAD7B4 /* RiderSignInViewController.swift in Sources */,
 				924519901C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodeld in Sources */,
+				109487701C71918B00FAD7B4 /* DriverSignInViewController.swift in Sources */,
 				9245198A1C715B8200A4887B /* ViewController.swift in Sources */,
 				924519881C715B8200A4887B /* AppDelegate.swift in Sources */,
 				1094876C1C71880800FAD7B4 /* DestinationInfoViewController.swift in Sources */,

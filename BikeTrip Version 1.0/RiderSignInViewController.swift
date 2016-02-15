@@ -1,5 +1,5 @@
 //
-//  DestinationInfoViewController.swift
+//  RiderSignInViewController.swift
 //  BikeTrip Version 1.0
 //
 //  Created by Sanjay Shrestha on 2/14/16.
@@ -8,14 +8,7 @@
 
 import UIKit
 
-class DestinationInfoViewController: UIViewController {
-    
-    
-    @IBOutlet weak var infoTextView: UITextView!
-    @IBOutlet weak var photo1ImageView: UIImageView!
-    
-    
-    
+class RiderSignInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +21,7 @@ class DestinationInfoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    //@IBAction func photo1ImageViewPressed(sender: UIButton) {
-    // need to make the photo enlarged when pressed
-    
-    //}
+
     /*
     // MARK: - Navigation
 
