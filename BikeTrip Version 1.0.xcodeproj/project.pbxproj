@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1094876C1C71880800FAD7B4 /* DestinationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */; };
 		924519881C715B8200A4887B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924519871C715B8200A4887B /* AppDelegate.swift */; };
 		9245198A1C715B8200A4887B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924519891C715B8200A4887B /* ViewController.swift */; };
 		9245198D1C715B8200A4887B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9245198B1C715B8200A4887B /* Main.storyboard */; };
 		924519901C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9245198E1C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodeld */; };
-		924519921C715B8200A4887B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 924519911C715B8200A4887B /* Assets.xcassets */; };
 		924519951C715B8200A4887B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924519931C715B8200A4887B /* LaunchScreen.storyboard */; };
 		924519A01C715B8300A4887B /* BikeTrip_Version_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245199F1C715B8300A4887B /* BikeTrip_Version_1_0Tests.swift */; };
 		924519AB1C715B8300A4887B /* BikeTrip_Version_1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924519AA1C715B8300A4887B /* BikeTrip_Version_1_0UITests.swift */; };
@@ -35,12 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationInfoViewController.swift; sourceTree = "<group>"; };
 		924519841C715B8200A4887B /* BikeTrip Version 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BikeTrip Version 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		924519871C715B8200A4887B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		924519891C715B8200A4887B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9245198C1C715B8200A4887B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9245198F1C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BikeTrip_Version_1_0.xcdatamodel; sourceTree = "<group>"; };
-		924519911C715B8200A4887B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		924519941C715B8200A4887B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		924519961C715B8200A4887B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9245199B1C715B8300A4887B /* BikeTrip Version 1.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BikeTrip Version 1.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,8 +101,8 @@
 			children = (
 				924519871C715B8200A4887B /* AppDelegate.swift */,
 				924519891C715B8200A4887B /* ViewController.swift */,
+				1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */,
 				9245198B1C715B8200A4887B /* Main.storyboard */,
-				924519911C715B8200A4887B /* Assets.xcassets */,
 				924519931C715B8200A4887B /* LaunchScreen.storyboard */,
 				924519961C715B8200A4887B /* Info.plist */,
 				9245198E1C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodeld */,
@@ -233,7 +233,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				924519951C715B8200A4887B /* LaunchScreen.storyboard in Resources */,
-				924519921C715B8200A4887B /* Assets.xcassets in Resources */,
 				9245198D1C715B8200A4887B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +261,7 @@
 				924519901C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodeld in Sources */,
 				9245198A1C715B8200A4887B /* ViewController.swift in Sources */,
 				924519881C715B8200A4887B /* AppDelegate.swift in Sources */,
+				1094876C1C71880800FAD7B4 /* DestinationInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +486,7 @@
 				924519B11C715B8300A4887B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		924519B21C715B8300A4887B /* Build configuration list for PBXNativeTarget "BikeTrip Version 1.0Tests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +495,7 @@
 				924519B41C715B8300A4887B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		924519B51C715B8300A4887B /* Build configuration list for PBXNativeTarget "BikeTrip Version 1.0UITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +504,7 @@
 				924519B71C715B8300A4887B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
