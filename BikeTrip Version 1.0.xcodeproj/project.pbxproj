@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10338B841C87F87E00AA6EDC /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10338B831C87F87E00AA6EDC /* registerViewController.swift */; };
+		10338B861C88095900AA6EDC /* scheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10338B851C88095900AA6EDC /* scheduleViewController.swift */; };
 		1094876C1C71880800FAD7B4 /* DestinationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */; };
 		1094876E1C71917B00FAD7B4 /* RiderSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094876D1C71917B00FAD7B4 /* RiderSignInViewController.swift */; };
 		109487701C71918B00FAD7B4 /* DriverSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094876F1C71918B00FAD7B4 /* DriverSignInViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10338B831C87F87E00AA6EDC /* registerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		10338B851C88095900AA6EDC /* scheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scheduleViewController.swift; sourceTree = "<group>"; };
 		1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationInfoViewController.swift; sourceTree = "<group>"; };
 		1094876D1C71917B00FAD7B4 /* RiderSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderSignInViewController.swift; sourceTree = "<group>"; };
 		1094876F1C71918B00FAD7B4 /* DriverSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverSignInViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */,
 				1094876D1C71917B00FAD7B4 /* RiderSignInViewController.swift */,
 				1094876F1C71918B00FAD7B4 /* DriverSignInViewController.swift */,
+				10338B831C87F87E00AA6EDC /* registerViewController.swift */,
+				10338B851C88095900AA6EDC /* scheduleViewController.swift */,
 				9245198B1C715B8200A4887B /* Main.storyboard */,
 				924519931C715B8200A4887B /* LaunchScreen.storyboard */,
 				924519961C715B8200A4887B /* Info.plist */,
@@ -267,9 +273,11 @@
 				1094876E1C71917B00FAD7B4 /* RiderSignInViewController.swift in Sources */,
 				924519901C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodeld in Sources */,
 				109487701C71918B00FAD7B4 /* DriverSignInViewController.swift in Sources */,
+				10338B861C88095900AA6EDC /* scheduleViewController.swift in Sources */,
 				9245198A1C715B8200A4887B /* ViewController.swift in Sources */,
 				924519881C715B8200A4887B /* AppDelegate.swift in Sources */,
 				1094876C1C71880800FAD7B4 /* DestinationInfoViewController.swift in Sources */,
+				10338B841C87F87E00AA6EDC /* registerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

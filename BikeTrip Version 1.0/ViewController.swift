@@ -12,9 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var destinationInfoButton: UIButton!
     @IBOutlet weak var viewUpcomingTripsButton: UIButton!
-    @IBOutlet weak var signInAsARider: UIButton!
-    @IBOutlet weak var signInAsADriver: UIButton!
-    @IBOutlet weak var registerButton: UIButton!
+
     
 
     override func viewDidLoad() {
@@ -25,6 +23,19 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(animated: Bool)
+    {
+    let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn");
+        
+        if(!isUserLoggedIn)
+        {
+            self.performSegueWithIdentifier("loginView", sender: self);
+            print("helloworld")
+        }
+        
+        
     }
 
     @IBAction func destinationInfoButtonPressed(sender: UIButton) {
