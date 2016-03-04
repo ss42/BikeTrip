@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var destinationInfoButton: UIButton!
     @IBOutlet weak var viewUpcomingTripsButton: UIButton!
+    let ref = Firebase(url: "https://bike-trip.firebaseio.com/grocery-items")
 
     
 
@@ -46,22 +48,14 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func signInAsARiderButtonPressed(sender: UIButton) {
+    @IBAction func logoutButtonTapped(sender: AnyObject) {
         
-    }
-    
-    
-    @IBAction func signInAsADriverButtonPressed(sender: UIButton) {
+        NSUserDefaults.standardUserDefaults().setBool(false,forKey:"isUserLoggedIn");
+        NSUserDefaults.standardUserDefaults().synchronize();
         
-        
-    }
-    @IBAction func registerButtonPressed(sender: UIButton) {
-        
+        self.performSegueWithIdentifier("loginView", sender: self);
         
         
     }
-    
-    
-
-}
-
+        
+    }

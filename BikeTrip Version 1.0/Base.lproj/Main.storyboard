@@ -14,32 +14,24 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HS-Op-WW0">
-                                <rect key="frame" x="284" y="524" width="57" height="30"/>
-                                <state key="normal" title="Register">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="registerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aFO-ZQ-ytx"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bike Trip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vU1-XD-Xxm">
-                                <rect key="frame" x="212" y="114" width="200" height="45"/>
-                                <color key="backgroundColor" red="1" green="0.67911030939999995" blue="0.42306808109999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="32"/>
-                                <color key="textColor" white="0.41705388430000001" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" white="0.41705388430000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="107" y="140" width="200" height="45"/>
+                                <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PS-Tq-Vda">
-                                <rect key="frame" x="187" y="286" width="250" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.67911030939999995" blue="0.42306808109999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="82" y="312" width="250" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="24"/>
+                                <color key="tintColor" red="1" green="0.29882517040000001" blue="0.27515588629999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Destination Info">
-                                    <color key="titleColor" white="0.4170538843078101" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -52,11 +44,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkR-GN-faM">
-                                <rect key="frame" x="187" y="361" width="250" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.67911030939999995" blue="0.42306808109999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="82" y="387" width="250" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="21"/>
                                 <state key="normal" title="View upcoming Trips">
-                                    <color key="titleColor" white="0.4170538843078101" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -68,12 +60,17 @@
                                     <action selector="viewUpcomingTripsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6TT-Ha-5va"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymW-pv-kdg">
-                                <rect key="frame" x="187" y="436" width="250" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.67911030942974926" blue="0.42306808113528371" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="24"/>
-                                <state key="normal" title="Sign in as a rider">
-                                    <color key="titleColor" white="0.4170538843078101" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9H6-WZ-Oj3">
+                                <rect key="frame" x="155" y="193" width="104" height="100"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3j-Gd-HDX">
+                                <rect key="frame" x="146" y="571" width="100" height="25"/>
+                                <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" red="0.98075510529999999" green="0.96038710019999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -82,19 +79,16 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="signInAsARiderButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QlU-JB-l2L"/>
+                                    <action selector="logoutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jQx-wi-nwO"/>
+                                    <action selector="viewUpcomingTripsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCt-k0-Ake"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9H6-WZ-Oj3">
-                                <rect key="frame" x="260" y="167" width="104" height="100"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.00065475223464428565" green="0.647275647025641" blue="0.37837893813276718" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Udb-Eo-Cdk"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="destinationInfoButton" destination="5PS-Tq-Vda" id="Uhb-S3-JxH"/>
                         <outlet property="viewUpcomingTripsButton" destination="MkR-GN-faM" id="rYC-Rg-8Yw"/>
@@ -103,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="337"/>
+            <point key="canvasLocation" x="829" y="343"/>
         </scene>
         <!--Destination Info View Controller-->
         <scene sceneID="gqA-Hh-Moq">
@@ -114,39 +108,40 @@
                         <viewControllerLayoutGuide type="bottom" id="ebR-1m-EVc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6uY-Oo-pg6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTM-OG-37Q">
+                                <rect key="frame" x="20" y="15" width="40" height="30"/>
+                                <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9c9-Pf-4Gj">
-                                <rect key="frame" x="142" y="105" width="316" height="205"/>
-                                <color key="backgroundColor" red="1" green="0.67911030939999995" blue="0.42306808109999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="49" y="217" width="316" height="205"/>
+                                <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" white="0.41705388430000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Destination Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4R-Cu-hpt">
-                                <rect key="frame" x="168" y="20" width="264" height="41"/>
-                                <color key="backgroundColor" red="1" green="0.67911030939999995" blue="0.42306808109999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="32"/>
-                                <color key="textColor" white="0.41705388430000001" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" white="0.41705388430000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="75" y="132" width="264" height="41"/>
+                                <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdd-xv-MPt">
-                                <rect key="frame" x="180" y="363" width="240" height="128"/>
+                                <rect key="frame" x="87" y="475" width="240" height="128"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTM-OG-37Q">
-                                <rect key="frame" x="20" y="15" width="40" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.67911030939999995" blue="0.42306808109999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="infoTextView" destination="9c9-Pf-4Gj" id="IWE-0K-o1d"/>
                         <outlet property="photo1ImageView" destination="hdd-xv-MPt" id="Haz-ze-JuU"/>
@@ -154,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E3T-TY-fIc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744" y="359"/>
+            <point key="canvasLocation" x="1716" y="149"/>
         </scene>
         <!--Rider Sign In View Controller-->
         <scene sceneID="81F-nG-Z4u">
@@ -165,40 +160,40 @@
                         <viewControllerLayoutGuide type="bottom" id="DDF-zH-lm7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tGJ-Q0-0n1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrZ-sF-IKm">
                                 <rect key="frame" x="20" y="28" width="40" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.67911030939999995" blue="0.42306808109999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign in as a rider" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbc-bu-S7Y">
-                                <rect key="frame" x="151" y="131" width="300" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.67911030939999995" blue="0.42306808109999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="32"/>
-                                <color key="textColor" white="0.41705388430000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="57" y="127" width="300" height="50"/>
+                                <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="0.41705388430000001" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="4l8-pu-NV0">
-                                <rect key="frame" x="50" y="252" width="500" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="4l8-pu-NV0">
+                                <rect key="frame" x="50" y="252" width="350" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="5fb-go-SZe">
-                                <rect key="frame" x="50" y="325" width="500" height="30"/>
+                                <rect key="frame" x="50" y="325" width="350" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0t-iv-i2K">
-                                <rect key="frame" x="178" y="413" width="250" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.67911030939999995" blue="0.42306808109999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="82" y="399" width="250" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="24"/>
                                 <state key="normal" title="Sign In">
-                                    <color key="titleColor" white="0.41705388430000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -211,7 +206,7 @@
                                     <action selector="signInButtonTapped:" destination="u5A-of-l5b" eventType="touchUpInside" id="nxS-Xs-3DD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCF-A6-Zeb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCF-A6-Zeb">
                                 <rect key="frame" x="50" y="218" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -223,8 +218,17 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2N-dX-loC">
+                                <rect key="frame" x="142" y="457" width="115" height="30"/>
+                                <state key="normal" title="Forgot Password">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Mg-ji-qaG"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMQ-0U-Fvx">
-                                <rect key="frame" x="275" y="483" width="57" height="30"/>
+                                <rect key="frame" x="179" y="612" width="57" height="30"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -234,8 +238,9 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="userEmailTextView" destination="4l8-pu-NV0" id="Ran-gJ-cHI"/>
                         <outlet property="userPasswordTextView" destination="5fb-go-SZe" id="6UY-hl-drF"/>
@@ -243,7 +248,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yGG-l6-dED" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1213" y="1135"/>
+            <point key="canvasLocation" x="1325" y="977"/>
         </scene>
         <!--Driver Sign In View Controller-->
         <scene sceneID="WK6-nq-LOz">
@@ -254,33 +259,40 @@
                         <viewControllerLayoutGuide type="bottom" id="Fbl-fn-2oe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="H3c-bX-1qk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjX-GA-2aH">
+                                <rect key="frame" x="20" y="28" width="40" height="30"/>
+                                <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign in as a driver" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQk-5b-S2O">
-                                <rect key="frame" x="150" y="28" width="300" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.67911030939999995" blue="0.42306808109999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="32"/>
-                                <color key="textColor" white="0.41705388430000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="62" y="171" width="300" height="50"/>
+                                <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="0.41705388430000001" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="CnK-JI-DeM">
-                                <rect key="frame" x="50" y="148" width="500" height="30"/>
+                                <rect key="frame" x="37" y="266" width="350" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="e4B-ju-kbe">
-                                <rect key="frame" x="50" y="227" width="500" height="30"/>
+                                <rect key="frame" x="37" y="345" width="350" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PT5-rZ-fTu">
-                                <rect key="frame" x="175" y="296" width="250" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.67911030939999995" blue="0.42306808109999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="87" y="418" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.98075510529999999" green="0.96038710019999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="24"/>
                                 <state key="normal" title="Sign In">
-                                    <color key="titleColor" white="0.41705388430000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -292,27 +304,20 @@
                                     <action selector="signInAsADriverButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V0Y-VA-JhF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjX-GA-2aH">
-                                <rect key="frame" x="20" y="28" width="40" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.67911030939999995" blue="0.42306808109999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8u-Me-Whz">
-                                <rect key="frame" x="50" y="119" width="87" height="21"/>
+                                <rect key="frame" x="37" y="237" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fP-Dy-2Sk">
-                                <rect key="frame" x="50" y="198" width="87" height="21"/>
+                                <rect key="frame" x="37" y="316" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMs-7w-0mB">
-                                <rect key="frame" x="243" y="366" width="115" height="30"/>
+                                <rect key="frame" x="155" y="476" width="115" height="30"/>
                                 <state key="normal" title="Forgot Password">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -321,7 +326,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1p-EH-e9r">
-                                <rect key="frame" x="272" y="494" width="57" height="30"/>
+                                <rect key="frame" x="184" y="550" width="57" height="30"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -330,12 +335,13 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xLR-NS-9Zm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1986" y="995"/>
+            <point key="canvasLocation" x="2265" y="977"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="1sV-6u-DEC">
@@ -346,63 +352,63 @@
                         <viewControllerLayoutGuide type="bottom" id="n5k-yH-dJ9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WON-Rm-ybR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02c-BU-9pc">
                                 <rect key="frame" x="20" y="20" width="40" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.67911030939999995" blue="0.42306808109999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Registration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZq-rY-PaY">
-                                <rect key="frame" x="172" y="107" width="275" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.67911030939999995" blue="0.42306808109999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="32"/>
-                                <color key="textColor" white="0.41705388430000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="70" y="107" width="275" height="50"/>
+                                <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="0.41705388430000001" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kH4-fs-wqP">
-                                <rect key="frame" x="59" y="193" width="87" height="21"/>
+                                <rect key="frame" x="33" y="191" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="6ZS-dF-bkl">
-                                <rect key="frame" x="59" y="222" width="500" height="30"/>
+                                <rect key="frame" x="33" y="220" width="350" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="2I8-aW-viG">
-                                <rect key="frame" x="58" y="289" width="500" height="30"/>
+                                <rect key="frame" x="32" y="287" width="350" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDr-3F-xXn">
-                                <rect key="frame" x="59" y="260" width="87" height="21"/>
+                                <rect key="frame" x="33" y="258" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="wnB-6n-9zj">
-                                <rect key="frame" x="58" y="354" width="500" height="30"/>
+                                <rect key="frame" x="32" y="352" width="350" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Repeat Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24N-XB-0JQ">
-                                <rect key="frame" x="58" y="327" width="132" height="21"/>
+                                <rect key="frame" x="32" y="325" width="132" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMF-kH-LN8">
-                                <rect key="frame" x="184" y="424" width="250" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.67911030939999995" blue="0.42306808109999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="82" y="416" width="250" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="24"/>
                                 <state key="normal" title="Register">
-                                    <color key="titleColor" white="0.41705388430000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -416,13 +422,16 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXO-7g-0zl">
-                                <rect key="frame" x="200" y="513" width="216" height="30"/>
+                                <rect key="frame" x="99" y="510" width="216" height="30"/>
                                 <state key="normal" title="I have an account. Let me log in">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="u5A-of-l5b" kind="presentation" id="6VK-aC-CiP"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="passwordTextView" destination="2I8-aW-viG" id="Gny-GZ-W4Y"/>
@@ -432,7 +441,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Zd-IV-Mar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="489" y="1217"/>
+            <point key="canvasLocation" x="1799" y="977"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sjq-6L-0Bu">
@@ -453,4 +462,7 @@
             <point key="canvasLocation" x="245" y="337"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6VK-aC-CiP"/>
+    </inferredMetricsTieBreakers>
 </document>

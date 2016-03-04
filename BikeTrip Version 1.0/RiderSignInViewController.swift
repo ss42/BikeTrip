@@ -25,6 +25,13 @@ class RiderSignInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func displayMyAlertMessage(userMessage: String) {
+        let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert)
+        let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.Default, handler: nil)
+        myAlert.addAction(okAction)
+        self.presentViewController(myAlert, animated: true, completion: nil);
+    }
+    
     @IBAction func signInButtonTapped(sender: AnyObject) {
         let userEmail = userEmailTextView.text;
         let userPassword = userPasswordTextView.text;
@@ -43,7 +50,18 @@ class RiderSignInViewController: UIViewController {
                 
                 self.dismissViewControllerAnimated(true, completion:nil);
             }
+            else
+            {
+                displayMyAlertMessage("Passwords do not match");
+                return;
+            }
         }
+        else
+        {
+            displayMyAlertMessage("Invalid Email and password. Please register first if you haven't done so.");
+            return;
+        }
+       
         
         
     }
