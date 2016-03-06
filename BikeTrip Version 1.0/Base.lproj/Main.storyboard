@@ -100,6 +100,65 @@
             </objects>
             <point key="canvasLocation" x="829" y="343"/>
         </scene>
+        <!--Schedule View Controller-->
+        <scene sceneID="OuY-th-p1a">
+            <objects>
+                <viewController id="6mG-Up-fM4" customClass="scheduleViewController" customModule="BikeTrip_Version_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DkE-Lf-6E6"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Ie-ex-aOd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DbR-at-3F2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GNx-4G-Svs">
+                                <rect key="frame" x="0.0" y="0.0" width="421" height="736"/>
+                                <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Wj0-xf-9tq">
+                                        <rect key="frame" x="0.0" y="28" width="421" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wj0-xf-9tq" id="TLX-IL-HJJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="421" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHl-2N-YXi">
+                                                    <rect key="frame" x="36" y="8" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="PMs-ni-8oK">
+                                        <rect key="frame" x="0.0" y="72" width="421" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PMs-ni-8oK" id="boE-xe-diW">
+                                            <rect key="frame" x="0.0" y="0.0" width="421" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6mG-Up-fM4" id="duc-DE-hb0"/>
+                                    <outlet property="delegate" destination="6mG-Up-fM4" id="r3I-jt-pRt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="tableView" destination="GNx-4G-Svs" id="e02-W4-OEk"/>
+                        <outlet property="textLabel" destination="FHl-2N-YXi" id="VTb-Fw-IqY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKF-6G-P4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1337" y="149"/>
+        </scene>
         <!--Destination Info View Controller-->
         <scene sceneID="gqA-Hh-Moq">
             <objects>
@@ -150,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E3T-TY-fIc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716" y="149"/>
+            <point key="canvasLocation" x="1337" y="-629"/>
         </scene>
         <!--Rider Sign In View Controller-->
         <scene sceneID="81F-nG-Z4u">
@@ -243,9 +302,6 @@
                                     <segment title="Driver"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="riderDriverSegment:" destination="u5A-of-l5b" eventType="valueChanged" id="B1n-LK-Rbh"/>
-                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -355,9 +411,6 @@
                                     <segment title="Driver"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="riderDriverSegment:" destination="u5A-of-l5b" eventType="valueChanged" id="lSL-Ef-hOv"/>
-                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -392,6 +445,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6VK-aC-CiP"/>
+        <segue reference="OfU-M6-pCh"/>
     </inferredMetricsTieBreakers>
 </document>

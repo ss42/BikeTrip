@@ -47,7 +47,7 @@ class registerViewController: UIViewController {
         let userPassword = passwordTextView.text
         let userRepeatPassword = repeatPasswordTextView.text
         
-        
+        /*
         if userEmail != "" && userPassword != "" && userRepeatPassword != ""
         {
             
@@ -89,17 +89,17 @@ class registerViewController: UIViewController {
             self.presentViewController(alert, animated: true, completion: nil)
         }
     }
-        /*
+        */
         //check for empty fields
         if (userEmail!.isEmpty || userPassword!.isEmpty || userRepeatPassword!.isEmpty)
         {
             //Display alert message
-            displayMyAlertMessage("All fields are requrired")
+            displayMyAlertMessage("Error", message: "All fields are requrired")
             return;
         }
         if (userPassword != userRepeatPassword){
             //Display an alert
-            displayMyAlertMessage("Passwords do not match")
+            displayMyAlertMessage("Error", message: "Passwords do not match")
         }
         //store data
         //Need to Store data in ServerSide
@@ -120,7 +120,7 @@ class registerViewController: UIViewController {
             self.presentViewController(myAlert, animated:true, completion:nil);
             
         }
-        */
+    
     }
     
 

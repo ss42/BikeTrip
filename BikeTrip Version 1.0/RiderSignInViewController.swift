@@ -18,6 +18,7 @@ class RiderSignInViewController: UIViewController {
     @IBOutlet weak var riderDriverSegment: UISegmentedControl!
     
     var isRider: Bool!
+    //isRider =
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,12 +37,13 @@ class RiderSignInViewController: UIViewController {
         myAlert.addAction(okAction)
         self.presentViewController(myAlert, animated: true, completion: nil);
     }
-    
+  /*
     @IBAction func riderDriverSegment(sender: AnyObject) {
         
         if self.riderDriverSegment.selectedSegmentIndex == 0{
             
             self.isRider = true
+            //is the rider
             
         }else {
             
@@ -51,7 +53,7 @@ class RiderSignInViewController: UIViewController {
         
         
         
-    }
+    }*/
     /*
     override func viewDidAppear(animated: Bool)
     {
@@ -66,9 +68,12 @@ class RiderSignInViewController: UIViewController {
     */
     
     @IBAction func signInButtonTapped(sender: AnyObject) {
-        
-        let email = self.userEmailTextView.text
+        /*
+        let userEmail = self.userEmailTextView.text
         let password = self.userPasswordTextView.text
+        
+        
+        
         
         if email != "" && password != ""
         {
@@ -96,10 +101,10 @@ class RiderSignInViewController: UIViewController {
 
         
 }
-}
+}   */
         
-        
-        /*var ref = Firebase(url: "https://docs-examples.firebaseio.com/web/saving-data/fireblog")
+       
+        var ref = Firebase(url: "https://docs-examples.firebaseio.com/web/saving-data/fireblog")
         let userEmail = userEmailTextView.text;
         let userPassword = userPasswordTextView.text;
         
@@ -107,7 +112,7 @@ class RiderSignInViewController: UIViewController {
         
         let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword");
         
-        if(userEmailStored == userEmail) && (self.riderDriverSegment.selectedSegmentIndex != -1)
+        if(userEmailStored == userEmail)// && (self.riderDriverSegment.selectedSegmentIndex != -1)
         {
             if(userPasswordStored == userPassword)
             {
@@ -129,7 +134,8 @@ class RiderSignInViewController: UIViewController {
             return;
         }
        
-        */
+
         
 
 
+    }}
