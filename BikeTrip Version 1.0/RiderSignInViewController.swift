@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 class RiderSignInViewController: UIViewController {
 
     @IBOutlet weak var userEmailTextView: UITextField!
     @IBOutlet weak var userPasswordTextView: UITextField!
-    
+    //let ref = Firebase(url: "https://bike-trip.firebaseio.com")
+
     @IBOutlet weak var riderDriverSegment: UISegmentedControl!
     
     var isRider: Bool!
@@ -50,7 +52,54 @@ class RiderSignInViewController: UIViewController {
         
         
     }
+    /*
+    override func viewDidAppear(animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        
+        if NSUserDefaults.standardUserDefaults().valueForKey("uid") != nil && CURRENT_USER.authData != nil
+        {
+            self.logoutButton.hidden = false
+        }
+    }
+    
+    */
+    
     @IBAction func signInButtonTapped(sender: AnyObject) {
+        
+        let email = self.userEmailTextView.text
+        let password = self.userPasswordTextView.text
+        
+        if email != "" && password != ""
+        {
+            FIREBASE_REF.authUser(email, password: password, withCompletionBlock: { error, authData in
+                
+                if error == nil
+                {
+                    NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
+                    print("Logged In :)")
+                   // self.logoutButton.hidden = false
+                }
+                else
+                {
+                    //use the function of error
+                    print(error)
+                }
+            })
+        }
+        else
+        {
+            displayMyAlertMessage("Error", message: "Enter your Email and Password")
+        
+        }
+
+
+        
+}
+}
+        
+        
+        /*var ref = Firebase(url: "https://docs-examples.firebaseio.com/web/saving-data/fireblog")
         let userEmail = userEmailTextView.text;
         let userPassword = userPasswordTextView.text;
         
@@ -80,18 +129,7 @@ class RiderSignInViewController: UIViewController {
             return;
         }
        
+        */
         
-        
-    }
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}

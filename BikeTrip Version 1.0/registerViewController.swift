@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class registerViewController: UIViewController {
 
@@ -26,24 +27,69 @@ class registerViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func displayMyAlertMessage(userMessage: String) {
-        let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert)
-        let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.Default, handler: nil)
+    
+    
+    func displayMyAlertMessage(title: String, message: String) {
+        let myAlert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
         myAlert.addAction(okAction)
         self.presentViewController(myAlert, animated: true, completion: nil);
     }
-    
    
     @IBAction func registerButtonTapped(sender: AnyObject) {
         let userEmail =  userEmailTextField.text
         let userPassword = passwordTextView.text
         let userRepeatPassword = repeatPasswordTextView.text
         
+        
+        if userEmail != "" && userPassword != "" && userRepeatPassword != ""
+        {
+            
+            if userPassword == userRepeatPassword{
+                
+                FIREBASE_REF.createUser(userEmail, password: userPassword, withValueCompletionBlock: { (error, authData) -> Void in
+                    
+                    if error == nil
+                    {
+                        FIREBASE_REF.authUser(userEmail, password: userPassword, withCompletionBlock: { error, authData in
+                            
+                            if error == nil
+                            {
+                                NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
+                                NSUserDefaults.standardUserDefaults().synchronize()
+                                print("Account Created :)")
+                                self.dismissViewControllerAnimated(true,completion: nil)
+                            }
+                            else
+                            {
+                                print(error)
+                            }
+                        
+                        
+                        })
+                    }
+                    
+                    })
+            }else{
+                
+                displayMyAlertMessage("Error", message: "Password doesn't match.")
+                
+            }
+            
+        } else {
+            let alert = UIAlertController(title: "Error", message: "Enter Email and Password.", preferredStyle: UIAlertControllerStyle.Alert)
+            let action = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+            alert.addAction(action)
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+        /*
         //check for empty fields
         if (userEmail!.isEmpty || userPassword!.isEmpty || userRepeatPassword!.isEmpty)
         {
@@ -74,7 +120,7 @@ class registerViewController: UIViewController {
             self.presentViewController(myAlert, animated:true, completion:nil);
             
         }
-        
+        */
     }
     
 

@@ -18,6 +18,7 @@
 		924519951C715B8200A4887B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924519931C715B8200A4887B /* LaunchScreen.storyboard */; };
 		924519A01C715B8300A4887B /* BikeTrip_Version_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245199F1C715B8300A4887B /* BikeTrip_Version_1_0Tests.swift */; };
 		924519AB1C715B8300A4887B /* BikeTrip_Version_1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924519AA1C715B8300A4887B /* BikeTrip_Version_1_0UITests.swift */; };
+		926117111C8CBDF80051628C /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926117101C8CBDF80051628C /* Firebase.swift */; };
 		BC518B7DD2B2B7DBE86A373A /* Pods_BikeTrip_Version_1_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B8360C3A53219DEB9BFA1C /* Pods_BikeTrip_Version_1_0.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		924519A61C715B8300A4887B /* BikeTrip Version 1.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BikeTrip Version 1.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		924519AA1C715B8300A4887B /* BikeTrip_Version_1_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeTrip_Version_1_0UITests.swift; sourceTree = "<group>"; };
 		924519AC1C715B8300A4887B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		926117101C8CBDF80051628C /* Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				924519871C715B8200A4887B /* AppDelegate.swift */,
+				926117101C8CBDF80051628C /* Firebase.swift */,
 				924519891C715B8200A4887B /* ViewController.swift */,
 				1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */,
 				1094876D1C71917B00FAD7B4 /* RiderSignInViewController.swift */,
@@ -344,6 +347,7 @@
 			files = (
 				1094876E1C71917B00FAD7B4 /* RiderSignInViewController.swift in Sources */,
 				924519901C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodeld in Sources */,
+				926117111C8CBDF80051628C /* Firebase.swift in Sources */,
 				10338B861C88095900AA6EDC /* scheduleViewController.swift in Sources */,
 				9245198A1C715B8200A4887B /* ViewController.swift in Sources */,
 				924519881C715B8200A4887B /* AppDelegate.swift in Sources */,
