@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var destinationInfoButton: UIButton!
     @IBOutlet weak var viewUpcomingTripsButton: UIButton!
-    let ref = Firebase(url: "https://bike-trip.firebaseio.com/grocery-items")
+    let ref = Firebase(url: "https://bike-trip.firebaseio.com/grocery")
 
     
 

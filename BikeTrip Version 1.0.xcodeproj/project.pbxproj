@@ -11,7 +11,6 @@
 		10338B861C88095900AA6EDC /* scheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10338B851C88095900AA6EDC /* scheduleViewController.swift */; };
 		1094876C1C71880800FAD7B4 /* DestinationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */; };
 		1094876E1C71917B00FAD7B4 /* RiderSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094876D1C71917B00FAD7B4 /* RiderSignInViewController.swift */; };
-		109487701C71918B00FAD7B4 /* DriverSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094876F1C71918B00FAD7B4 /* DriverSignInViewController.swift */; };
 		924519881C715B8200A4887B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924519871C715B8200A4887B /* AppDelegate.swift */; };
 		9245198A1C715B8200A4887B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924519891C715B8200A4887B /* ViewController.swift */; };
 		9245198D1C715B8200A4887B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9245198B1C715B8200A4887B /* Main.storyboard */; };
@@ -44,7 +43,6 @@
 		10338B851C88095900AA6EDC /* scheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scheduleViewController.swift; sourceTree = "<group>"; };
 		1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationInfoViewController.swift; sourceTree = "<group>"; };
 		1094876D1C71917B00FAD7B4 /* RiderSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderSignInViewController.swift; sourceTree = "<group>"; };
-		1094876F1C71918B00FAD7B4 /* DriverSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverSignInViewController.swift; sourceTree = "<group>"; };
 		30EA4C73A52DB45FFBCF1786 /* Pods-BikeTrip Version 1.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeTrip Version 1.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-BikeTrip Version 1.0/Pods-BikeTrip Version 1.0.release.xcconfig"; sourceTree = "<group>"; };
 		49FC6EB3BAAA11A868BF75C4 /* Pods-BikeTrip Version 1.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeTrip Version 1.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BikeTrip Version 1.0/Pods-BikeTrip Version 1.0.debug.xcconfig"; sourceTree = "<group>"; };
 		77B8360C3A53219DEB9BFA1C /* Pods_BikeTrip_Version_1_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BikeTrip_Version_1_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,7 +124,6 @@
 				924519891C715B8200A4887B /* ViewController.swift */,
 				1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */,
 				1094876D1C71917B00FAD7B4 /* RiderSignInViewController.swift */,
-				1094876F1C71918B00FAD7B4 /* DriverSignInViewController.swift */,
 				10338B831C87F87E00AA6EDC /* registerViewController.swift */,
 				10338B851C88095900AA6EDC /* scheduleViewController.swift */,
 				9245198B1C715B8200A4887B /* Main.storyboard */,
@@ -347,7 +344,6 @@
 			files = (
 				1094876E1C71917B00FAD7B4 /* RiderSignInViewController.swift in Sources */,
 				924519901C715B8200A4887B /* BikeTrip_Version_1_0.xcdatamodeld in Sources */,
-				109487701C71918B00FAD7B4 /* DriverSignInViewController.swift in Sources */,
 				10338B861C88095900AA6EDC /* scheduleViewController.swift in Sources */,
 				9245198A1C715B8200A4887B /* ViewController.swift in Sources */,
 				924519881C715B8200A4887B /* AppDelegate.swift in Sources */,
