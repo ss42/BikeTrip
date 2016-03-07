@@ -82,6 +82,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="viewUpcomingTripsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6TT-Ha-5va"/>
+                                    <segue destination="6mG-Up-fM4" kind="presentation" id="HoA-K0-pgN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -112,31 +113,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GNx-4G-Svs">
-                                <rect key="frame" x="0.0" y="0.0" width="421" height="736"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWL-pA-ngG">
+                                <rect key="frame" x="20" y="20" width="40" height="30"/>
                                 <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="TWL-fN-ehR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upcoming Trips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ka5-Me-8uS">
+                                <rect key="frame" x="75" y="48" width="265" height="45"/>
+                                <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GNx-4G-Svs" customClass="TableView">
+                                <rect key="frame" x="0.0" y="117" width="421" height="619"/>
+                                <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="glm-mw-m4n">
+                                    <rect key="frame" x="0.0" y="72" width="421" height="619"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8wQ-a0-9ws" customClass="TableView">
+                                        <rect key="frame" x="0.0" y="0.0" width="421" height="619"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="XAM-hg-59p">
+                                            <rect key="frame" x="0.0" y="0.0" width="421" height="619"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <outlet property="dataSource" destination="6mG-Up-fM4" id="aQg-Uu-Ybh"/>
+                                                <outlet property="delegate" destination="6mG-Up-fM4" id="blh-tA-gF0"/>
+                                            </connections>
+                                        </tableView>
+                                        <connections>
+                                            <outlet property="dataSource" destination="6mG-Up-fM4" id="W7s-Ey-X25"/>
+                                            <outlet property="delegate" destination="6mG-Up-fM4" id="qy8-v9-Nbp"/>
+                                        </connections>
+                                    </tableView>
+                                    <connections>
+                                        <outlet property="dataSource" destination="6mG-Up-fM4" id="ACd-oD-xrM"/>
+                                        <outlet property="delegate" destination="6mG-Up-fM4" id="QLd-zi-bLN"/>
+                                    </connections>
+                                </tableView>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Wj0-xf-9tq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" id="Wj0-xf-9tq" customClass="TableViewCell" customModule="BikeTrip_Version_1_0" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="421" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wj0-xf-9tq" id="TLX-IL-HJJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="421" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHl-2N-YXi">
-                                                    <rect key="frame" x="36" y="8" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="PMs-ni-8oK">
-                                        <rect key="frame" x="0.0" y="72" width="421" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PMs-ni-8oK" id="boE-xe-diW">
-                                            <rect key="frame" x="0.0" y="0.0" width="421" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="388" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -147,17 +178,58 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.00065475223464428565" green="0.647275647025641" blue="0.37837893813276718" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="tableView" destination="GNx-4G-Svs" id="e02-W4-OEk"/>
-                        <outlet property="textLabel" destination="FHl-2N-YXi" id="VTb-Fw-IqY"/>
+                        <outlet property="scheduleTableView" destination="XAM-hg-59p" id="FAX-4o-aII"/>
+                        <segue destination="k7c-Dp-rqr" kind="show" identifier="showDetailSegue" id="lgi-TR-ah9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sKF-6G-P4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1337" y="149"/>
+        </scene>
+        <!--Schedule Detail View Controller-->
+        <scene sceneID="4BU-Lb-pgn">
+            <objects>
+                <viewController id="k7c-Dp-rqr" customClass="scheduleDetailViewController" customModule="BikeTrip_Version_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XBF-q8-pXa"/>
+                        <viewControllerLayoutGuide type="bottom" id="PUx-KQ-arZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P5k-h2-Irm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0k-Xi-fGX">
+                                <rect key="frame" x="57" y="357" width="300" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlv-0M-59q">
+                                <rect key="frame" x="20" y="28" width="40" height="30"/>
+                                <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6mG-Up-fM4" kind="presentation" id="8U7-pm-T6W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="detailLabel" destination="v0k-Xi-fGX" id="UL5-2L-CFu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6rA-m1-NXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845" y="155"/>
         </scene>
         <!--Destination Info View Controller-->
         <scene sceneID="gqA-Hh-Moq">
@@ -177,6 +249,9 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="zNt-fw-d3S"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9c9-Pf-4Gj">
                                 <rect key="frame" x="49" y="217" width="316" height="205"/>
@@ -202,10 +277,6 @@
                         <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <connections>
-                        <outlet property="infoTextView" destination="9c9-Pf-4Gj" id="IWE-0K-o1d"/>
-                        <outlet property="photo1ImageView" destination="hdd-xv-MPt" id="Haz-ze-JuU"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E3T-TY-fIc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -290,7 +361,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign in" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbc-bu-S7Y">
                                 <rect key="frame" x="57" y="128" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.0006547522346" green="0.64727564699999995" blue="0.37837893810000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="0.41705388430000001" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -445,6 +516,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="TWL-fN-ehR"/>
+        <segue reference="8U7-pm-T6W"/>
         <segue reference="OfU-M6-pCh"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		10338B841C87F87E00AA6EDC /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10338B831C87F87E00AA6EDC /* registerViewController.swift */; };
 		10338B861C88095900AA6EDC /* scheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10338B851C88095900AA6EDC /* scheduleViewController.swift */; };
+		107DB68A1C8D06A300E66B86 /* scheduleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107DB6891C8D06A300E66B86 /* scheduleDetailViewController.swift */; };
 		1094876C1C71880800FAD7B4 /* DestinationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */; };
 		1094876E1C71917B00FAD7B4 /* RiderSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094876D1C71917B00FAD7B4 /* RiderSignInViewController.swift */; };
 		924519881C715B8200A4887B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924519871C715B8200A4887B /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		10338B831C87F87E00AA6EDC /* registerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		10338B851C88095900AA6EDC /* scheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scheduleViewController.swift; sourceTree = "<group>"; };
+		107DB6891C8D06A300E66B86 /* scheduleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scheduleDetailViewController.swift; sourceTree = "<group>"; };
 		1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationInfoViewController.swift; sourceTree = "<group>"; };
 		1094876D1C71917B00FAD7B4 /* RiderSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderSignInViewController.swift; sourceTree = "<group>"; };
 		30EA4C73A52DB45FFBCF1786 /* Pods-BikeTrip Version 1.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeTrip Version 1.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-BikeTrip Version 1.0/Pods-BikeTrip Version 1.0.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				924519871C715B8200A4887B /* AppDelegate.swift */,
 				926117101C8CBDF80051628C /* Firebase.swift */,
+				107DB6891C8D06A300E66B86 /* scheduleDetailViewController.swift */,
 				924519891C715B8200A4887B /* ViewController.swift */,
 				1094876B1C71880800FAD7B4 /* DestinationInfoViewController.swift */,
 				1094876D1C71917B00FAD7B4 /* RiderSignInViewController.swift */,
@@ -350,6 +353,7 @@
 				926117111C8CBDF80051628C /* Firebase.swift in Sources */,
 				10338B861C88095900AA6EDC /* scheduleViewController.swift in Sources */,
 				9245198A1C715B8200A4887B /* ViewController.swift in Sources */,
+				107DB68A1C8D06A300E66B86 /* scheduleDetailViewController.swift in Sources */,
 				924519881C715B8200A4887B /* AppDelegate.swift in Sources */,
 				1094876C1C71880800FAD7B4 /* DestinationInfoViewController.swift in Sources */,
 				10338B841C87F87E00AA6EDC /* registerViewController.swift in Sources */,
