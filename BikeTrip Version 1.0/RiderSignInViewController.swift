@@ -13,8 +13,7 @@ class RiderSignInViewController: UIViewController {
 
     @IBOutlet weak var userEmailTextView: UITextField!
     @IBOutlet weak var userPasswordTextView: UITextField!
-    //let ref = Firebase(url: "https://bike-trip.firebaseio.com")
-
+    let ref = Firebase(url: "http://bike-trip.firebaseapp.com")
     @IBOutlet weak var riderDriverSegment: UISegmentedControl!
     
     var isRider: Bool!
@@ -68,8 +67,8 @@ class RiderSignInViewController: UIViewController {
     */
     
     @IBAction func signInButtonTapped(sender: AnyObject) {
-        /*
-        let userEmail = self.userEmailTextView.text
+        
+        let email = self.userEmailTextView.text
         let password = self.userPasswordTextView.text
         
         
@@ -77,10 +76,12 @@ class RiderSignInViewController: UIViewController {
         
         if email != "" && password != ""
         {
-            FIREBASE_REF.authUser(email, password: password, withCompletionBlock: { error, authData in
+            self.ref.authUser(email, password: password, withCompletionBlock: { error, authData in
                 
                 if error == nil
                 {
+                    let userID = NSUserDefaults.standardUserDefaults().valueForKey("uid") as! String
+                    
                     NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
                     print("Logged In :)")
                    // self.logoutButton.hidden = false
@@ -101,8 +102,8 @@ class RiderSignInViewController: UIViewController {
 
         
 }
-}   */
-        
+}
+     /*
        
         var ref = Firebase(url: "https://docs-examples.firebaseio.com/web/saving-data/fireblog")
         let userEmail = userEmailTextView.text;
@@ -138,4 +139,4 @@ class RiderSignInViewController: UIViewController {
         
 
 
-    }}
+    }}*/

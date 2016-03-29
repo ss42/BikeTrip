@@ -17,7 +17,8 @@ class registerViewController: UIViewController {
     
     @IBOutlet weak var repeatPasswordTextView: UITextField!
     
-    
+    let ref = Firebase(url: "http://bike-trip.firebaseapp.com")
+
     
     
     
@@ -35,29 +36,22 @@ class registerViewController: UIViewController {
     }
     
     
-    func displayMyAlertMessage(title: String, message: String) {
-        let myAlert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
-        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
-        myAlert.addAction(okAction)
-        self.presentViewController(myAlert, animated: true, completion: nil);
-    }
-   
     @IBAction func registerButtonTapped(sender: AnyObject) {
-        let userEmail =  userEmailTextField.text
-        let userPassword = passwordTextView.text
-        let userRepeatPassword = repeatPasswordTextView.text
+        let email  =  userEmailTextField.text
+        let password   = passwordTextView.text
+        let repeatPassword = repeatPasswordTextView.text
         
-        /*
-        if userEmail != "" && userPassword != "" && userRepeatPassword != ""
+        
+        if email   != "" && password != "" && repeatPassword != ""
         {
             
-            if userPassword == userRepeatPassword{
+            if password == repeatPassword{
                 
-                FIREBASE_REF.createUser(userEmail, password: userPassword, withValueCompletionBlock: { (error, authData) -> Void in
+                self.ref.createUser(email, password: password, withValueCompletionBlock: { (error, authData) -> Void in
                     
                     if error == nil
                     {
-                        FIREBASE_REF.authUser(userEmail, password: userPassword, withCompletionBlock: { error, authData in
+                        self.ref.authUser(email, password: password, withCompletionBlock: { error, authData in
                             
                             if error == nil
                             {
@@ -89,7 +83,8 @@ class registerViewController: UIViewController {
             self.presentViewController(alert, animated: true, completion: nil)
         }
     }
-        */
+}
+        /*
         //check for empty fields
         if (userEmail!.isEmpty || userPassword!.isEmpty || userRepeatPassword!.isEmpty)
         {
@@ -125,3 +120,4 @@ class registerViewController: UIViewController {
     
 
 
+*/
